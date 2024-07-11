@@ -7,6 +7,7 @@ app = Flask(__name__)
 CONTAINER_2_ENDPOINT_SUM = 'http://localhost:4000/processSum'
 STORAGE_PATH = "../poojitha_PV_dir"  
 
+
 @app.route('/store-file', methods=['POST'])
 def store_file():
     data = request.get_json()
